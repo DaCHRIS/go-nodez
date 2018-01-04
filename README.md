@@ -84,8 +84,8 @@ here.
 
 Specifying the `--testnet` flag however will reconfigure your Nodez instance a bit:
 
- * Instead of using the default data directory (`~/.ethereum` on Linux for example), Nodez will nest
-   itself one level deeper into a `testnet` subfolder (`~/.ethereum/testnet` on Linux). Note, on OSX
+ * Instead of using the default data directory (`~/.nodez` on Linux for example), Nodez will nest
+   itself one level deeper into a `testnet` subfolder (`~/.nodez/testnet` on Linux). Note, on OSX
    and Linux this also means that attaching to a running testnet node requires the use of a custom
    endpoint since `ndz attach` will try to attach to a production node endpoint by default. E.g.
    `ndz attach <datadir>/testnet/nodez.ipc`. Windows users are not affected by this.

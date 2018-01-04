@@ -28,7 +28,6 @@ import (
 	"strings"
 
 	"github.com/NodezCrypto/go-nodez/common/math"
-	"gopkg.in/urfave/cli.v1"
 )
 
 // Custom type which is registered in the flags library which cli uses for
@@ -48,7 +47,7 @@ func (self *DirectoryString) Set(value string) error {
 }
 
 // Custom cli.Flag type which expand the received string to an absolute path.
-// e.g. ~/.ethereum -> /home/username/.ethereum
+// e.g. ~/.nodez -> /home/username/.nodez
 type DirectoryFlag struct {
 	Name  string
 	Value DirectoryString
